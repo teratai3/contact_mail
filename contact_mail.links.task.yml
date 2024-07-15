@@ -1,0 +1,17 @@
+contact_mail.view:
+  route_name: entity.contact_mail.canonical
+  title: 'View'
+  base_route: entity.contact_mail.canonical
+  weight: 0
+
+contact_mail.edit:
+  route_name: entity.contact_mail.edit_form
+  title: 'Edit'
+  base_route: entity.contact_mail.canonical
+  weight: 10
+
+contact_mail.delete:
+  route_name: entity.contact_mail.delete_form
+  title: 'Delete'
+  base_route: entity.contact_mail.canonical
+  weight: 20

@@ -1,0 +1,10 @@
+contact_mail.collection:
+  title: 'お問い合わせ一覧'
+  description: 'お問い合わせページ'
+  route_name: entity.contact_mail.collection
+  weight: 1
+  parent: system.admin
+  options:
+    attributes:
+      class:
+        - 'toolbar-icon-system-admin-content'

@@ -1,0 +1,19 @@
+<?php
+
+use Drupal\contact_mail\Entity\ContactMail;
+
+
+/**
+ * Implements hook_mail().
+ */
+function contact_mail_mail($key, &$message, $params)
+{
+  if ($key === "mail_send") {
+    $message['subject'] = isset($params['title']) ? $params['title'] : 'お問い合わせ';
+    $message['body'][] = isset($params['message']) ? $params['message'] : '';
+  }
+}
+
+/**
+ * フックではない関数を定義する
+ */
